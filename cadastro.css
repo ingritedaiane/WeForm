@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+}
+
+.content {
+    display: grid;
+    grid-template-areas:
+    ". . . . ." 
+    ". hero . form ."
+    ". hero . form ."
+    ". . . . ."
+    ;
+    margin-top: 8.5rem;
+}
+
+main {
+    grid-area: form;
+}
+
+aside {
+    grid-area: hero;
+}
+
+:root {
+    font-size: 62.5%;
+    --default-border: 0.1rem solid #0000002b;
+}
+
+h1 {
+    font-size: 6.4rem;
+    line-height: 75px;
+    color: #000000;
+}
+
+span {
+    color: #FF5678;
+}
+
+h2 {
+    font-size: 3.6rem;
+    max-width: 43rem;
+}
+
+main {
+    height: 52rem;
+    width: 60rem;
+    border: var(--default-border);
+    padding: 4.4rem 5.7rem;
+    border-radius: 1.2rem;
+    position: relative;
+}
+
+main header {
+    display: flex;
+    align-items: center;
+    gap: 0 1.8rem; /*usado sempre em display flex*/
+}
+
+main .actions a {
+    height: 5.5rem;
+    background-color: #35E6E9;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.4rem;
+    border: 2px solid #C0EBF4;
+    border-radius: 1.2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 4.1rem;
+}
+
+main form input {
+    width: 489px;
+    height: 5.5rem;
+    background: #FFFFFF;
+    border:var(--default-border);
+    border-radius: 1.2rem;
+}
+
+main form label {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: lowercase;
+    display: block;
+    margin: 1rem;
+}
+
+main form img {
+    position: absolute;
+    right: 1.5rem;
+    bottom: 16rem;
+    cursor: pointer;
+}
